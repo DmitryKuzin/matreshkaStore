@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import ru.dz.labs.api.service.UsersService;
 //import ru.dz.labs.api.domain.SubjectInfo;
 //import ru.dz.labs.api.service.SubjectService;
 //import ru.dz.labs.api.service.TutorService;
@@ -15,6 +16,7 @@ public class MainPageController extends BaseController {
 //    private SubjectService subjectService;
 //    @Autowired
 //    private TutorService tutorService;
+
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String renderMainPage() {
