@@ -6,8 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import ru.dz.labs.api.domain.Addres;
+import ru.dz.labs.api.domain.Cart;
 import ru.dz.labs.api.domain.Users;
 import ru.dz.labs.api.service.AddresService;
+import ru.dz.labs.api.service.CartService;
 import ru.dz.labs.api.service.UsersService;
 
 import javax.servlet.http.Cookie;
@@ -28,6 +30,9 @@ public class RegisterController extends BaseController {
     @Autowired
     private AddresService as;
 
+    @Autowired
+    private CartService cs;
+
     @RequestMapping(value = "/reg",method = RequestMethod.POST)
     public String registerNewUser(){
         String login=request.getParameter("email");
@@ -37,6 +42,7 @@ public class RegisterController extends BaseController {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 new String[] { "tutor-core.xml" }, true);
         Users user= new Users(login,pass,avatar,name,null);
+
         us.addUser(user);
 //        boolean addressAdded= (boolean) request.getSession().getAttribute("addressAdded");
         boolean addressAdded=true;
@@ -54,6 +60,6 @@ public class RegisterController extends BaseController {
         //как добыть response хз
         //response.addCookie(cookie);
 
-        return "main/index";
+        return "redirect:/";
     }
 }

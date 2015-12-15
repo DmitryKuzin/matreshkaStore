@@ -25,10 +25,11 @@ public class LoginController extends BaseController {
         for (Users u:users){
             if(u.getLogin().equals(email)){
                 if(u.getHash_pass().equals(pass)){
-                    return "main/item";
+                    request.getSession().setAttribute("user",u);
+                    request.getSession().setAttribute("userName",u.getName());
                 }
             }
         }
-        return "main/index";
+        return "redirect:/";
     }
 }

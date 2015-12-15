@@ -1,3 +1,4 @@
+ <#--@ftlvariable name="curUser" type="java.util.List<ru.dz.labs.api.domain.Users>" -->
 <nav class="navbar navbar-inverse">
     <div class="container">
 
@@ -16,7 +17,11 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <#include "login.ftl" />
+                <#if userName??>
+                    <li><a href="#" style="color:white">${userName}</a></li>
+                <#else>
+                    <#include "login.ftl" />
+                </#if>
                 <li><a href="#">Support</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#myModal">Cart <span class="badge">$7.98</span></a>
                 </li>
