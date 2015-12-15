@@ -18,6 +18,7 @@ public class BaseController {
     @Autowired
     protected HttpServletRequest request;
 
+
     public static String redirectToMain() {
         return "redirect:/";
     }

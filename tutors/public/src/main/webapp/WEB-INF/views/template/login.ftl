@@ -1,4 +1,5 @@
-<li class="dropdown">
+
+<li class="dropdown" id="must-be-replaced">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
     <ul id="login-dp" class="dropdown-menu">
         <li>
@@ -10,7 +11,8 @@
                         <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                     </div>
                     or
-                    <form class="form" role="form" method="post" action="/login" accept-charset="UTF-8" id="login-nav">
+                    <#--method="post" action="/login"-->
+                    <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
                         <div class="form-group">
                             <label class="sr-only" for="exampleInputEmail2">Email address</label>
                             <input type="email" name="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
@@ -21,7 +23,7 @@
                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                            <button type="submit" id="butt" class="btn btn-primary btn-block">Sign in</button>
                         </div>
                         <div class="checkbox">
                             <label>
