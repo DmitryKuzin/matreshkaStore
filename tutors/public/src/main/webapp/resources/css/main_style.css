@@ -1,0 +1,60 @@
+@font-face {
+    font-family: myfont; /* ָלÿ רנטפעא */
+    src: url(/resources/fonts/96089.ttf); /* ֿףעü ך פאיכף סמ רנטפעמל */
+}
+h2 {
+    font-family: myfont;
+}
+img{
+    max-height: 500px;
+}
+ol.carousel-indicators li{
+    border-color: #F35;
+}
+.thumbnails {
+    
+}
+
+#name {
+    font-size: larger;
+}
+
+#description {
+    font-size: smaller;
+}
+
+
+.karusel-description {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 7, 0.75);
+}
+
+.karusel-link {
+    color:white;
+}
+
+#karusel-header {
+    color: black;
+}
+
+.top-categories {
+    margin-left: 8px;
+    margin-right: -31px;
+    margin-bottom: 0;
+}
+
+#top-cat-left {
+    margin-left: 8px;
+    margin-right: -31px;
+    margin-bottom: 0;
+}
+
+#top-cat-center {
+    margin-bottom: 0;
+}
+
+#top-cat-right {
+    margin-right: 8px;
+    margin-left: -30px;
+    margin-bottom: 0;
+}
