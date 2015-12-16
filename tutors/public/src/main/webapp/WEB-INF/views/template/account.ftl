@@ -1,6 +1,6 @@
 
 <li class="dropdown" id="must-be-replaced">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>${userName}</b> <span class="caret"></span></a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>${userName!'Аноним'}</b> <span class="caret"></span></a>
     <ul id="login-dp" class="dropdown-menu">
         <li>
             <div class="row">
