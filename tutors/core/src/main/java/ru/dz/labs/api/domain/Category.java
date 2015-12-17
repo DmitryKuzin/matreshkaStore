@@ -37,7 +37,7 @@ public class Category {
     @OneToOne
     @JoinColumn(name = "category_id")
     private Category parent_id;
-    private String alias;
+    private String alias;//will be used as image link
 
     @OneToMany(cascade = CascadeType.REFRESH,
     fetch = FetchType.LAZY,
