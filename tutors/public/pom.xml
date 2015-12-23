@@ -30,6 +30,13 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${org.springframework.version}</version>
         </dependency>
+        <!--This is for Lists.reverse-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+
 
         <!--&lt;!&ndash; Need this for json to/from object &ndash;&gt;-->
         <dependency>
